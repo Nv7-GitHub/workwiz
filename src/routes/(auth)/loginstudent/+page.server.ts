@@ -8,7 +8,7 @@ export const actions = {
 
         // Login
         try {
-            await locals.pb?.collection("users").authWithPassword(username, password);
+            await locals.pb?.collection("students").authWithPassword(username, password);
         } catch (err: any) {
             return fail(400, err.data);
         }

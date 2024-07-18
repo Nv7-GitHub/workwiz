@@ -7,10 +7,10 @@
 </script>
 
 <svelte:head>
-    <title>Login - Studier</title>
+    <title>Login Teacher - WorkWiz</title>
 </svelte:head>
 
-<h1>Login</h1>
+<h1>Login Teacher</h1>
 
 <form
     method="post"
@@ -47,7 +47,7 @@
         />
     </div>
     <div class="mb-3">
-        Already have an account? <a href="/register">Register</a>
+        Already have an account? <a href="/registerteacher">Register</a>
     </div>
     <button type="submit" class="btn btn-primary" disabled={loading}
         >Login</button

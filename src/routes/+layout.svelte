@@ -5,7 +5,7 @@
 </script>
 
 <svelte:head>
-    <title>Studier</title>
+    <title>WorkWiz</title>
 </svelte:head>
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
@@ -58,7 +58,44 @@
                             </li>
                         </ul>
                     {:else}
-                        <a class="nav-link" href="/login">Login</a>
+                        <button
+                            class="nav-link dropdown-toggle"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                        >
+                            Login
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li>
+                                <a class="dropdown-item" href="/loginteacher"
+                                    >Teacher</a
+                                >
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/loginstudent"
+                                    >Student</a
+                                >
+                            </li>
+                        </ul>
+                        <button
+                            class="nav-link dropdown-toggle"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                        >
+                            Register
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li>
+                                <a class="dropdown-item" href="/registerteacher"
+                                    >Teacher</a
+                                >
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/registerstudent"
+                                    >Student</a
+                                >
+                            </li>
+                        </ul>
                     {/if}
                 </li>
             </ul>

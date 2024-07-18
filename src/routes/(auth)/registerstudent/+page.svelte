@@ -11,10 +11,10 @@
 </script>
 
 <svelte:head>
-    <title>Register - Studier</title>
+    <title>Register Student - WorkWiz</title>
 </svelte:head>
 
-<h1>Register</h1>
+<h1>Register Student</h1>
 
 <form
     method="post"
@@ -67,7 +67,7 @@
         {/if}
     </div>
     <div class="mb-3">
-        Already have an account? <a href="/login">Login</a>
+        Already have an account? <a href="/loginstudent">Login</a>
     </div>
     <button type="submit" class="btn btn-primary" disabled={loading}
         >Register</button

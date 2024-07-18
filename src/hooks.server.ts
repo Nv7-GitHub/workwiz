@@ -13,7 +13,7 @@ export const handle: Handle = async ({ event, resolve }) => {
         // Check if the user is authenticated
         if (event.locals.pb.authStore.isValid) {
             // Refresh the user's authentication
-            await event.locals.pb.collection('users').authRefresh();
+            await event.locals.pb.collection(event.locals.pb.authStore.model?.collectionName).authRefresh();
 
             // Set the user in the locals object
             event.locals.user = structuredClone(event.locals.pb.authStore.model);
