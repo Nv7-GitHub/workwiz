@@ -35,8 +35,8 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/about">About</a>
                 </li>
-                <li class="nav-item dropdown">
-                    {#if data.user}
+                {#if data.user}
+                    <li class="nav-item dropdown">
                         <button
                             class="nav-link dropdown-toggle"
                             data-bs-toggle="dropdown"
@@ -45,9 +45,18 @@
                             {data.user.username}
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end">
-                            <li>
-                                <a class="dropdown-item" href="/">TODO</a>
-                            </li>
+                            {#if data.teacher}
+                                <li>
+                                    <a class="dropdown-item" href="/newset"
+                                        >New Set</a
+                                    >
+                                </li>
+                            {:else}
+                                <li>
+                                    <a class="dropdown-item" href="/">TODO</a>
+                                </li>
+                            {/if}
+
                             <li>
                                 <hr class="dropdown-divider" />
                             </li>
@@ -57,7 +66,9 @@
                                 >
                             </li>
                         </ul>
-                    {:else}
+                    </li>
+                {:else}
+                    <li class="nav-item dropdown">
                         <button
                             class="nav-link dropdown-toggle"
                             data-bs-toggle="dropdown"
@@ -77,6 +88,8 @@
                                 >
                             </li>
                         </ul>
+                    </li>
+                    <li class="nav-item dropdown">
                         <button
                             class="nav-link dropdown-toggle"
                             data-bs-toggle="dropdown"
@@ -96,8 +109,8 @@
                                 >
                             </li>
                         </ul>
-                    {/if}
-                </li>
+                    </li>
+                {/if}
             </ul>
         </div>
     </div>
