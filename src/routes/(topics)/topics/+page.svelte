@@ -39,7 +39,7 @@
         name="name"
     />
     <button
-        class="btn btn-outline-success"
+        class="btn btn-success"
         formaction="?/newtopic"
         disabled={createTopicLoading}>Create Topic</button
     >
@@ -48,7 +48,7 @@
 <div class="list-group">
     {#each data.topics ?? [] as topic, i}
         <a
-            href={`topic/${topic.id}`}
+            href={`/topic/${topic.id}`}
             type="button"
             class="list-group-item list-group-item-action fs-4"
         >
