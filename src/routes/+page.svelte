@@ -1,3 +1,5 @@
+<svelte:head><title>WorkWiz</title></svelte:head>
+
 <div class="header">
     <h1 class="text-center text-light">You are an academic weapon.</h1>
 </div>

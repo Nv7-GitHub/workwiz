@@ -10,6 +10,7 @@ declare global {
 		interface Locals {
 			pb?: PocketBase;
 			user?: AuthModel;
+			teacher?: boolean;
 		}
 
 		// interface Error {}

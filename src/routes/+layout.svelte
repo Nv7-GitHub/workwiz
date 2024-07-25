@@ -47,8 +47,8 @@
                         <ul class="dropdown-menu dropdown-menu-end">
                             {#if data.teacher}
                                 <li>
-                                    <a class="dropdown-item" href="/newset"
-                                        >New Set</a
+                                    <a class="dropdown-item" href="/topics"
+                                        >My Topics</a
                                     >
                                 </li>
                             {:else}

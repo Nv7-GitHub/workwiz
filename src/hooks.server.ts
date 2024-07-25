@@ -17,6 +17,7 @@ export const handle: Handle = async ({ event, resolve }) => {
 
             // Set the user in the locals object
             event.locals.user = structuredClone(event.locals.pb.authStore.model);
+            event.locals.teacher = event.locals.pb.authStore.model?.collectionName == "teachers";
         }
     } catch (err) {
         // Clear the authStore if there is an error
